@@ -1,3 +1,4 @@
+/* About page styles */
 /* Grid layout of About page */
 #content {
   display: grid;
@@ -52,4 +53,33 @@
 #box-three {
   grid-column-start: 5;
   grid-column-end: 7;
+}
+
+/* Portfolio page styles */
+#project-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* reuseable styles for all project cards */
+.project {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-image: url('assets/images/project.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hidden-text {
+  display: none;
+  margin: auto auto;
+  position: absolute cover;
+  background-color: #f5f5f57a;
+  color: #111111;
+}
+
+.project:hover .hidden-text, .project:active .hidden-text {
+  display: block;
 }
