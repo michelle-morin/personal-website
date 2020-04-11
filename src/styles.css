@@ -1,78 +1,51 @@
-/* About page styles */
-/* Grid layout of About page */
-#content {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 70% 30%; 
+/* About section */
+.first-row {
+  width: 100vw;
+  height: 75vh;
 }
 
-/* Top section of About page */
-.two-boxes {
-  grid-row-start: 1;
-  grid-row-end: 2;
+.me {
+  background-image: url("assets/images/me.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.two-boxes img {
-  grid-column-start: 1;
-  grid-column-end: 6;
+.introduction h3 {
+  margin-top: 20%;
 }
 
-#introduction {
-  grid-column-start: 6;
-  grid-column-end: 11;
-  background-color: #f5f5f5;
-  color: #111111;
+.second-row {
+  max-height: 25vh;
+  width: 100vw;
 }
 
-/* Bottom section of About page */
-.five-boxes {
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.box-one {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.box {
+  padding: 1%;
   background-color: #111111;
   color: #f5f5f5;
 }
 
-.box-two {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  background-color: #f5f5f5;
-  color: #111111;
+.second-row h4 {
+  margin-left: 6%;
 }
 
-.box-three {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  background-color: #111111;
-  color: #f5f5f5;
+.second-row ul {
+  list-style-type: circle;
 }
 
-.box-four {
-  grid-column-start: 7;
-  grid-column-end: 9;
-  background-color: #f5f5f5;
-  color: #111111;
-}
-
-.box-five {
-  grid-column-start: 9;
-  grid-column-end: 11;
-  background-color: #111111;
-  color: #f5f5f5;
-}
-
-/* Portfolio page styles */
-#project-cards {
+/* Portfolio section */
+.project-cards {
   display: flex;
   flex-wrap: wrap;
 }
 
+#projects {
+  display: none;
+}
+
 /* reuseable styles for all project cards */
-.project {
+/* .project {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -80,7 +53,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .hidden-text {
   display: none;
@@ -92,4 +65,17 @@
 
 .project:hover .hidden-text, .project:active .hidden-text {
   display: block;
+}
+
+@media only screen and (max-width: 780px) {
+  .first-row {
+    width: 100vw;
+    height: 100vh;
+  }
+  .me {
+    height: 65vh;
+  }
+  .introduction {
+    height: 35vh;
+  }
 }
