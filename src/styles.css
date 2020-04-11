@@ -2,8 +2,8 @@
 /* Grid layout of About page */
 #content {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 50% 10% 40%; 
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 70% 30%; 
 }
 
 /* Top section of About page */
@@ -14,45 +14,55 @@
 
 .two-boxes img {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 6;
 }
 
 #introduction {
-  grid-column-start: 4;
-  grid-column-end: 7;
+  grid-column-start: 6;
+  grid-column-end: 11;
   background-color: #f5f5f5;
   color: #111111;
 }
 
-/* Middle section of About page */
-.one-wide-box {
+/* Bottom section of About page */
+.five-boxes {
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+.box-one {
   grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #111111;
+  color: #f5f5f5;
+}
+
+.box-two {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+.box-three {
+  grid-column-start: 5;
   grid-column-end: 7;
   background-color: #111111;
   color: #f5f5f5;
 }
 
-/* Bottom section of About page */
-.three-boxes {
-  grid-row-start: 3;
-  grid-row-end: 4;
+.box-four {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  background-color: #f5f5f5;
+  color: #111111;
 }
 
-#box-one {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-#box-two {
-  grid-column-start: 3;
-  grid-column-end: 5;
-}
-
-#box-three {
-  grid-column-start: 5;
-  grid-column-end: 7;
+.box-five {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  background-color: #111111;
+  color: #f5f5f5;
 }
 
 /* Portfolio page styles */
