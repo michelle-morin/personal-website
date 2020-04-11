@@ -1,0 +1,55 @@
+/* Grid layout of About page */
+#content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50% 10% 40%; 
+}
+
+/* Top section of About page */
+.two-boxes {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.two-boxes img {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#introduction {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+/* Middle section of About page */
+.one-wide-box {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  background-color: #111111;
+  color: #f5f5f5;
+}
+
+/* Bottom section of About page */
+.three-boxes {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#box-one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#box-two {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+#box-three {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
