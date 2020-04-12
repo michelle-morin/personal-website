@@ -20,7 +20,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'michelle', 
       template: './src/index.html',
-      inject: 'head'
+      inject: 'body'
     }),
     new Dotenv()
   ],
