@@ -92,10 +92,6 @@ footer {
   text-align: center;
 }
 
-.bio p {
-  font-size: 1.5rem;
-}
-
 .bio p a {
   color: #FEFFFF;
   text-decoration: underline;
@@ -159,7 +155,7 @@ footer {
   height: 100vh;
 }
 
-#projects h1 {
+#projects h2 {
   text-align: center;
   color: #FEFFFF;
   margin-bottom: 1%;
@@ -222,26 +218,39 @@ img.camping, img.salon {
 @media screen and (max-width: 1875px) {
   #projects {
     height: 105vh;
+    /* background-attachment: scroll; */
   }
 }
 
 @media screen and (max-width: 1200px) {
   .about {
     background-attachment: scroll;
+    height: 100vh;
+  }
+  .me {
+    background-attachment: scroll;
   }
 }
 
 @media screen and (max-width: 935px) {
+  .introduction {
+    height: 120vh;
+  }
+
   #projects {
-    height: 215vh;
+    height: auto;
+    position: relative;
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 765px) {
+  .about {
+    background-image: none;
+    background-color: #007f4f;
+  }
   .me {
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
-    height: 100vh;
     background-image: url("assets/images/me.jpeg");
     background-position: center;
     background-size: cover;
@@ -256,13 +265,22 @@ img.camping, img.salon {
   }
   .introduction {
     height: 110vh;
+    overflow: scroll;
+    align-items: center;
   }
-  #projects {
-    height: 320vh;
+  #skills-list {
+    display: none;
   }
 }
 
 @media screen and (max-width: 500px) {
+  .about {
+    background-image: none;
+    background-color: #007f4f;
+  }
+  #splash {
+    height: 50vh;
+  }
   .me {
     height: 60vh;
     width: 100vw;
@@ -277,12 +295,19 @@ img.camping, img.salon {
   .bio h2 {
     margin-top: 1%;
   }
-  #projects {
-    height: 320vh;
+  #projects h2 {
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 415px) {
+  .about {
+    background-image: none;
+    background-color: #007f4f;
+  }
+  #splash {
+    height: 50vh;
+  }
   .me {
     height: 60vh;
     width: 100vw;
@@ -297,26 +322,32 @@ img.camping, img.salon {
   .bio h2 {
     margin-top: 1%;
   }
-  #projects {
-    height: 350vh;
-  }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 375px) {
+  .about {
+    background-image: none;
+    background-color: #007f4f;
+  }
+  #splash {
+    height: 50vh;
+    width: 100vw;
+  }
   .me {
-    height: 60vh;
+    height: 50vh;
   }
   .introduction {
-    height: 120vh;
     align-items: flex-start;
+    height: 200%;
+    width: 100vw;
   }
   .introduction p {
     font-size: 1rem;
   }
+  .bio {
+    height: 100%;
+  }
   .bio h2 {
     margin-top: 1%;
-  }
-  #projects {
-    height: 400vh;
   }
 }
