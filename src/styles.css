@@ -1,32 +1,42 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
  }
  
  h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abril Fatface', serif;
- }
+  font-family: 'Quicksand', sans-serif;
+}
 
 /* NAV & FOOTER */
 nav {
-  background-color: #17252A;
+  background-color: #101357;
 }
 
 a.nav-link {
   color: #FEFFFF !important;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 a.nav-link:hover {
-  color: #17252A;
+  color: #fea49f !important;
+}
+
+nav button {
+  border-color: #fea49f !important;
+  font-family: 'Quicksand', sans-serif;
+  color: #fea49f !important;
+  font-weight: bolder;
+  font-size: 1.25em;
 }
 
 footer {
   text-align: center;
   padding: 1%;
-  border-top: 1px solid #17252A;
-  background-color: #DEF2F1;
-  color: #17252A;
+  border-top: 1px solid #101357;
+  background-color: #fea49f;
+  color: #101357;
 }
 
 /* SPLASH */
@@ -34,27 +44,16 @@ footer {
   height: 100vh;
 }
 
-#splash, #projects {
-  background-color: #3AAFA9;
-}
-
 #splash {
+  background-color: #fea49f;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.name-box h1 {
-  color: #DEF2F1;
-  font-size: 5em;
-  -webkit-text-stroke-color: #17252A;
-  -webkit-text-stroke-width: 2px;
-  position: relative;
-}
-
-#letter-2 {
-  position: fixed;
-  top: -2em;
+.name-box img {
+  width: 60vw;
+  height: auto;
 }
 
 /* ABOUT SECTION */
@@ -62,7 +61,7 @@ footer {
   position: relative;
   width: 100vw;
   height: 110vh;
-  background-image: url("assets/images/background.png");
+  background-image: url("assets/images/b.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,18 +70,17 @@ footer {
 
 .me {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .me img {
   position: absolute;
-  height: 75vh;
-  top: 15vh;
+  height: 70vh;
+  top: 18vh;
 }
 
 .introduction {
-  background-color: #17252A;
+  background-color:  #007f4f;
   color: #FEFFFF;
   height: 110vh;
   width: 100%;
@@ -94,78 +92,148 @@ footer {
   text-align: center;
 }
 
-.skills-list {
+.accordion {
   margin: auto auto;
   width: 80%;
   padding: 5%;
-  background-color: #DEF2F1;
-  color: #17252A;
+  background-color: transparent;
+  color: #101357;
+  border: none;
 }
 
-.skills-list h4 {
-  text-align: center;
+.accordion .card {
+  border-radius: 0;
+  background-color: #FEFFFF;
+}
+
+.accordion .card-header {
   cursor: pointer;
 }
 
-#languages, #tools, #frontend, #backend, #other {
-  display: none;
+.card-header button {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  color: #007f4f;
+  text-align: center;
+  text-decoration: none;
 }
 
-.box p {
-  margin-bottom: 0;
+.btn-link {
+  height: 100%;
+  width: 100%;
+}
+
+.card-header:hover, .card-header:hover .btn-link {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #101357;
+  color: #FEFFFF;
 }
 
 /* Projects section */
+#projects {
+  background-color: #101357;
+  padding: 2%;
+  height: 100vh;
+}
+
+#projects h1 {
+  text-align: center;
+  color: #FEFFFF;
+  margin-bottom: 1%;
+  font-size: 4rem;
+}
+
 .project-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
 
-/* reuseable styles for all project cards */
-/* .project {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  background-image: url('assets/images/project.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
-.hidden-text {
-  display: none;
-  margin: auto auto;
-  position: absolute cover;
-  background-color: #f5f5f57a;
-  color: #111111;
+.frame {
+  border: 1px solid #00a0a0;
+  color: #FEFFFF;
+  width: 450px;
+  height: 500px;
+  margin-bottom: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.project:hover .hidden-text, .project:active .hidden-text {
-  display: block;
+.frame img {
+  height: 70%;
+  width: auto;
+  border-radius: 5px;
+}
+
+.frame p {
+  font-size: 1.1rem;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+img.camping, img.salon {
+  width: 90%;
+  height: auto;
+}
+
+img.pokemon {
+  height: 65%;
+  width: auto;
+}
+
+.frame a, .frame a:hover {
+  color: #fea49f;
+}
+
+/* media queries for responsive design */
+@media only screen and (min-width: 935px) and (max-width: 1875px) {
+  #projects {
+    height: 110vh;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 935px) {
+  #projects {
+    height: 215vh;
+  }
 }
 
 @media only screen and (max-width: 780px) {
-  #splash {
-    height: 100vh;
+  .bio {
+    margin-top: 1%;
   }
-  #splash h1 {
-    font-size: 3em;
-    -webkit-text-stroke-width: 1.5px;
+  .introduction {
+    height: 110vh;
   }
+}
+
+@media only screen and (max-width: 500px) {
   .me {
-    height: 50vh;
+    height: 60vh;
+    width: 100vw;
   }
   .me img {
-    position: relative;
-    height: 45vh;
-    width: auto;
+    width: 100%;
+    height: auto;
     top: 0vh;
   }
   .introduction {
-    height: 75vh;
+    height: 100vh;
     align-items: flex-start;
   }
-  .bio {
+  .bio h2 {
     margin-top: 1%;
+  }
+  #projects {
+    height: 400vh;
   }
 }
