@@ -73,6 +73,7 @@ footer {
 }
 
 .me img {
+  border-radius: 10px;
   position: absolute;
   height: 70vh;
   top: 18vh;
