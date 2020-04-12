@@ -28,7 +28,7 @@ nav button {
   font-family: 'Quicksand', sans-serif;
   color: #fea49f !important;
   font-weight: bolder;
-  font-size: 1.25em;
+  font-size: 1.5rem !important;
 }
 
 footer {
@@ -80,7 +80,7 @@ footer {
 }
 
 .introduction {
-  background-color:  #007f4f;
+  background-color: #007f4f;
   color: #FEFFFF;
   height: 110vh;
   width: 100%;
@@ -92,18 +92,23 @@ footer {
   text-align: center;
 }
 
+.bio p {
+  font-size: 1.5rem;
+}
+
 .accordion {
   margin: auto auto;
   width: 80%;
   padding: 5%;
   background-color: transparent;
-  color: #101357;
-  border: none;
+  color: #FEFFFF;
 }
 
 .accordion .card {
   border-radius: 0;
-  background-color: #FEFFFF;
+  background-color: #101357;
+  border-radius: 10px;
+  border: 1px solid #FEFFFF;
 }
 
 .accordion .card-header {
@@ -116,7 +121,7 @@ footer {
   outline: none;
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
-  color: #007f4f;
+  color: #FEFFFF;
   text-align: center;
   text-decoration: none;
 }
@@ -124,13 +129,18 @@ footer {
 .btn-link {
   height: 100%;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .card-header:hover, .card-header:hover .btn-link {
   cursor: pointer;
   text-decoration: none;
-  background-color: #101357;
+  background-color: #007f4f;
   color: #FEFFFF;
+}
+
+.card-body {
+  background-color: #007f4f;
 }
 
 /* Projects section */
