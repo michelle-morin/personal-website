@@ -96,6 +96,15 @@ footer {
   font-size: 1.5rem;
 }
 
+.bio p a {
+  color: #FEFFFF;
+  text-decoration: underline;
+}
+
+.bio p a:hover {
+  color: #fea49f;
+}
+
 .accordion {
   margin: auto auto;
   width: 80%;
@@ -175,7 +184,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 .frame h4 {
@@ -204,25 +213,44 @@ img.camping, img.salon {
 }
 
 /* media queries for responsive design */
-@media only screen and (min-width: 1875px) {
+@media screen and (min-width: 1875px) {
   #projects {
     height: 75vh;
   }
 }
 
-@media only screen and (max-width: 1875px) {
+@media screen and (max-width: 1875px) {
   #projects {
     height: 105vh;
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
+  .about {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 935px) {
   #projects {
     height: 215vh;
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
+  .me {
+    height: 60vh;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/images/me.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  .me img {
+    display: none;
+  }
   .bio {
     margin-top: 1%;
   }
@@ -230,19 +258,14 @@ img.camping, img.salon {
     height: 110vh;
   }
   #projects {
-    height: 215vh;
+    height: 320vh;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .me {
     height: 60vh;
     width: 100vw;
-  }
-  .me img {
-    width: 100%;
-    height: auto;
-    top: 0vh;
   }
   .introduction {
     height: 100vh;
@@ -259,15 +282,10 @@ img.camping, img.salon {
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media screen and (max-width: 415px) {
   .me {
     height: 60vh;
     width: 100vw;
-  }
-  .me img {
-    width: 100%;
-    height: auto;
-    top: 0vh;
   }
   .introduction {
     height: 120vh;
@@ -284,15 +302,9 @@ img.camping, img.salon {
   }
 }
 
-@media only screen and (max-width: 325px) {
+@media screen and (max-width: 325px) {
   .me {
     height: 60vh;
-    width: 100vw;
-  }
-  .me img {
-    width: 100%;
-    height: auto;
-    top: 0vh;
   }
   .introduction {
     height: 120vh;
