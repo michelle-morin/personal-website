@@ -1,5 +1,4 @@
 body {
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
  }
@@ -152,7 +151,6 @@ footer {
 #projects {
   background-color: #101357;
   padding: 2%;
-  height: 100vh;
 }
 
 #projects h2 {
@@ -209,16 +207,10 @@ img.camping, img.salon {
 }
 
 /* media queries for responsive design */
-@media screen and (min-width: 1875px) {
-  #projects {
-    height: 75vh;
-  }
-}
 
 @media screen and (max-width: 1875px) {
   #projects {
     height: 105vh;
-    /* background-attachment: scroll; */
   }
 }
 
@@ -230,16 +222,15 @@ img.camping, img.salon {
   .me {
     background-attachment: scroll;
   }
+  #projects {
+    height: auto;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 935px) {
   .introduction {
     height: 120vh;
-  }
-
-  #projects {
-    height: auto;
-    position: relative;
   }
 }
 
@@ -266,7 +257,7 @@ img.camping, img.salon {
   .introduction {
     height: 110vh;
     overflow: scroll;
-    align-items: center;
+    align-items: flex-start;
   }
   #skills-list {
     display: none;
