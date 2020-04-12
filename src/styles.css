@@ -151,6 +151,7 @@ footer {
 #projects {
   background-color: #101357;
   padding: 2%;
+  height: 150vh;
 }
 
 #projects h2 {
@@ -171,8 +172,8 @@ footer {
 .frame {
   border: 1px solid #00a0a0;
   color: #FEFFFF;
-  width: 450px;
-  height: 500px;
+  width: 350px;
+  height: 450px;
   margin-bottom: 2em;
   text-align: center;
   display: flex;
