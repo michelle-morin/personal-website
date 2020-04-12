@@ -133,7 +133,6 @@ footer {
 .btn-link {
   height: 100%;
   width: 100%;
-  font-size: 1.5rem;
 }
 
 .card-header:hover, .card-header:hover .btn-link {
@@ -170,7 +169,7 @@ footer {
 }
 
 .frame {
-  border: 1px solid #00a0a0;
+  border: 1px solid #007f4f;
   color: #FEFFFF;
   width: 350px;
   height: 450px;
@@ -240,6 +239,7 @@ img.camping, img.salon {
 
 @media screen and (max-width: 765px) {
   .about {
+    height: auto;
     background-image: none;
     background-color: #007f4f;
   }
