@@ -3,87 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
   <title>portfolio</title>
 </head>
 <body>
-  <div class="container-fluid">
-    <!-- ABOUT ME -->
-    <div id="content">
-      <div class="first-row row">
-        <div class="col-md-6 me">
-        </div>
-        <div class="col-md-6 introduction">
-          <h3>Michelle Morin</h3>
-          <p>I enjoy learning new skills and sharing knowledge with others.</p>
-        </div>
-      </div>
-      <div class="second-row row">
-        <div class="col-md-2 box">
-          <h4>LANGUAGES</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>C#</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>jQuery</li>
-            <li>TypeScript</li>
-          </ul>
-        </div>
-        <div class="col-md-2 box">
-          <h4>TOOLS</h4>
-          <ul>
-            <li>Git/GitHub</li>
-            <li>CLI</li>
-            <li>Postman</li>
-            <li>Webpack</li>
-            <li>npm</li>
-            <li>ESLint</li>
-          </ul>
-        </div>
-        <div class="col-md-2 box">
-          <h4>FRONT-END</h4>
-          <ul>
-            <li>React.js</li>
-            <li>Redux</li>
-            <li>Bootstrap</li>
-            <li>Media queries</li>
-            <li>Building layouts</li>
-          </ul>
-        </div>
-        <div class="col-md-3 box">
-          <h4>BACK-END</h4>
-          <ul>
-            <li>.NET Core</li>
-            <li>Entity Framework Core</li>
-            <li>Identity</li>
-            <li>LINQ</li>
-            <li>REST APIs</li>
-            <li>MySQL, SQLite</li>
-          </ul>
-        </div>
-        <div class="col-md-3 box">
-          <h4>OTHER SKILLS</h4>
-          <ul>
-            <li>BDD & TDD</li>
-            <li>Testing (Jest, MSTest)</li>
-            <li>Object-oriented programming</li>
-            <li>Functional programming</li>
-            <li>Pair & mob programming</li>
-            <li>Writing DRY code</li>
-            <li>Technical writing</li>
-          </ul>
-        </div>
-      </div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/michelleamorin/" target="_blank">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/michelle-morin" target="_blank">GitHub</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- PROJECTS -->
-    <div id="projects">
-      <div class="container">
-        <div class="project-cards">
+  <!-- HOME -->
+  <div id="splash">
+    <div class="name-box">
+      <h1 id="firstname"><span id="letter letter-1">M</span>
+          <span id="letter letter-2">I</span>
+          <span id="letter letter-3">C</span>
+          <span id="letter letter-4">H</span>
+          <span id="letter letter-5">E</span>
+          <span id="letter letter-6">L</span>
+          <span id="letter letter-7">L</span>
+          <span id="letter letter-8">E</span></h1>
+      <h1 id="lastname"><span id="letter letter-9">M</span>
+          <span id="letter letter-10">O</span>
+          <span id="letter letter-11">R</span>
+          <span id="letter letter-12">I</span>
+          <span id="letter letter-13">N</span></h1>
+    </div>
+  </div>
 
-          <div class="card project">
-            <div class="hidden-text">
-              <h3>[project name]</h3>
+  <!-- ABOUT ME -->
+  <div id="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 me">
+          <img src="assets/images/me.jpeg" alt="photo of me">
+        </div>
+        <div class="col-md-5 introduction">
+          <div class="bio">
+            <h2>hello there!</h2>
+            <p>I'm Michelle, a software engineer residing in Portland, Oregon. Currently: I enjoy learning new skills and sharing knowledge with others. 
+            <p>I enjoy trail running, cycling, and discovering new-to-me music.</p>
+            <!-- SKILLS -->
+            <div class="skills-list">
+              <h4>LANGUAGES</h4>
+              <div id="languages">
+                <p>JavaScript</p>
+                <p>C#</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>jQuery</p>
+                <p>TypeScript</p>
+              </div>
+              <h4>TOOLS</h4>
+              <div id="tools">
+                <p>Git/GitHub</p>
+                <p>CLI</p>
+                <p>Postman</p>
+                <p>Webpack</p>
+                <p>npm</p>
+                <p>ESLint</p>
+              </div>
+              <h4>FRONT-END</h4>
+              <div id="frontend">
+                <p>React.js</p>
+                <p>Redux</p>
+                <p>Bootstrap</p>
+                <p>Media queries</p>
+              </div>
+              <h4>BACK-END</h4>
+              <div id="backend">
+                <p>.NET Core</p>
+                <p>Entity Framework Core</p>
+                <p>Authentication & Authorization</p>
+                <p>LINQ</p>
+                <p>REST APIs</p>
+                <p>MySQL, SQLite</p>
+              </div>
+              <h4>OTHER</h4>
+              <div id="other">
+                <p>BDD & TDD</p>
+                <p>Testing (Jest, MSTest)</p>
+                <p>Object-Oriented Programming</p>
+                <p>Functional Programming</p>
+                <p>Pair & Mob Programming</p>
+                <p>Technical Writing</p>
+              </div>
             </div>
           </div>
 
@@ -91,5 +112,73 @@
       </div>
     </div>
   </div>
+
+
+        <!-- <div class="box">
+          <h4>LANGUAGES</h4>
+          <p>JavaScript</p>
+          <p>C#</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>jQuery</p>
+          <p>TypeScript</p>
+        </div>
+        <div class="box">
+          <h4>TOOLS</h4>
+          <p>Git/GitHub</p>
+          <p>CLI</p>
+          <p>Postman</p>
+          <p>Webpack</p>
+          <p>npm</p>
+          <p>ESLint</p>
+        </div>
+        <div class="box">
+          <h4>FRONT-END</h4>
+          <p>React.js</p>
+          <p>Redux</p>
+          <p>Bootstrap</p>
+          <p>Media queries</p>
+        </div>
+        <div class="box">
+          <h4>BACK-END</h4>
+          <p>.NET Core</p>
+          <p>Entity Framework Core</p>
+          <p>Authentication & Authorization</p>
+          <p>LINQ</p>
+          <p>REST APIs</p>
+          <p>MySQL, SQLite</p>
+        </div>
+        <div class="box">
+          <h4>OTHER</h4>
+          <p>BDD & TDD</p>
+          <p>Testing (Jest, MSTest)</p>
+          <p>Object-Oriented Programming</p>
+          <p>Functional Programming</p>
+          <p>Pair & Mob Programming</p>
+          <p>Technical Writing</p>
+        </div> -->
+
+
+  <!-- PROJECTS -->
+  <div id="projects">
+    <div class="container">
+      <div class="project-cards">
+
+        <div class="card project">
+          <div class="hidden-text">
+            <h3>[project name]</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; Michelle Morin 2020</p>
+    <p>All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
