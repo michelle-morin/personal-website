@@ -1,47 +1,124 @@
-/* About section */
-.first-row {
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', serif;
+ }
+
+/* NAV & FOOTER */
+nav {
+  background-color: #17252A;
+}
+
+a.nav-link {
+  color: #FEFFFF !important;
+  cursor: pointer;
+}
+
+a.nav-link:hover {
+  color: #17252A;
+}
+
+footer {
+  text-align: center;
+  padding: 1%;
+  border-top: 1px solid #17252A;
+  background-color: #DEF2F1;
+  color: #17252A;
+}
+
+/* SPLASH */
+#splash, #about, #projects {
+  height: 100vh;
+}
+
+#splash, #projects {
+  background-color: #3AAFA9;
+}
+
+#splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-box h1 {
+  color: #DEF2F1;
+  font-size: 5em;
+  -webkit-text-stroke-color: #17252A;
+  -webkit-text-stroke-width: 2px;
+  position: relative;
+}
+
+#letter-2 {
+  position: fixed;
+  top: -2em;
+}
+
+/* ABOUT SECTION */
+#about {
+  position: relative;
   width: 100vw;
-  height: 75vh;
+  height: 110vh;
+  background-image: url("assets/images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .me {
-  background-image: url("assets/images/me.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.introduction h3 {
-  margin-top: 20%;
+.me img {
+  position: absolute;
+  height: 75vh;
+  top: 15vh;
 }
 
-.second-row {
-  max-height: 25vh;
-  width: 100vw;
+.introduction {
+  background-color: #17252A;
+  color: #FEFFFF;
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.box {
-  padding: 1%;
-  background-color: #111111;
-  color: #f5f5f5;
+.bio {
+  text-align: center;
 }
 
-.second-row h4 {
-  margin-left: 6%;
+.skills-list {
+  margin: auto auto;
+  width: 80%;
+  padding: 5%;
+  background-color: #DEF2F1;
+  color: #17252A;
 }
 
-.second-row ul {
-  list-style-type: circle;
+.skills-list h4 {
+  text-align: center;
+  cursor: pointer;
 }
 
-/* Portfolio section */
+#languages, #tools, #frontend, #backend, #other {
+  display: none;
+}
+
+.box p {
+  margin-bottom: 0;
+}
+
+/* Projects section */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-}
-
-#projects {
-  display: none;
 }
 
 /* reuseable styles for all project cards */
@@ -68,14 +145,27 @@
 }
 
 @media only screen and (max-width: 780px) {
-  .first-row {
-    width: 100vw;
+  #splash {
     height: 100vh;
   }
+  #splash h1 {
+    font-size: 3em;
+    -webkit-text-stroke-width: 1.5px;
+  }
   .me {
-    height: 65vh;
+    height: 50vh;
+  }
+  .me img {
+    position: relative;
+    height: 45vh;
+    width: auto;
+    top: 0vh;
   }
   .introduction {
-    height: 35vh;
+    height: 75vh;
+    align-items: flex-start;
+  }
+  .bio {
+    margin-top: 1%;
   }
 }
