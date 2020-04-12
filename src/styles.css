@@ -214,6 +214,13 @@ img.camping, img.salon {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  #projects {
+    height: auto;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .about {
     background-attachment: scroll;
@@ -221,10 +228,6 @@ img.camping, img.salon {
   }
   .me {
     background-attachment: scroll;
-  }
-  #projects {
-    height: auto;
-    position: relative;
   }
 }
 
@@ -261,6 +264,9 @@ img.camping, img.salon {
   }
   #skills-list {
     display: none;
+  }
+  .project-cards {
+    justify-content: space-between;
   }
 }
 
