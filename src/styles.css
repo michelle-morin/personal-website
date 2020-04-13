@@ -117,7 +117,7 @@ footer {
   box-shadow: none;
   outline: none;
   background-color: transparent;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
   color: rgb(30,44,46);
   text-align: center;
   text-decoration: none;
@@ -133,7 +133,6 @@ footer {
   text-decoration: none;
   background-color: rgb(30,44,46);
   color: rgb(211, 173, 143);
-  transform: scale(1.2);
 }
 
 .card-body {
