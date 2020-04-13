@@ -71,7 +71,7 @@ footer {
 
 .me {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .me img {
@@ -156,7 +156,8 @@ footer {
 
 #projects h2 {
   text-align: center;
-  color: rgb(208,205,188);
+  /* color: rgb(208,205,188); */
+  color: rgb(211, 173, 143);
   margin-bottom: 1%;
   font-size: 4rem;
 }
@@ -170,9 +171,11 @@ footer {
 }
 
 .frame {
-  border: 1px solid rgb(244,240,237);
+  /* border: 1px solid rgb(244,240,237); */
+  border: 1px solid rgb(211, 173, 143);
   border-radius: 10px;
-  color: rgb(208,205,188);
+  /* color: rgb(208,205,188); */
+  color: rgb(211, 173, 143);
   width: 350px;
   height: 450px;
   margin-bottom: 2em;
@@ -184,7 +187,8 @@ footer {
 }
 
 .frame h4 {
-  color: rgb(208,205,188);
+  /* color: rgb(208,205,188); */
+  color: rgb(211, 173, 143);
 }
 
 .frame img {
