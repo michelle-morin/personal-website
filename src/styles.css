@@ -34,8 +34,8 @@ footer {
   text-align: center;
   padding: 1%;
   border-top: 1px solid #101357;
-  background-color: #fea49f;
-  color: #101357;
+  background-color: #101357;
+  color: #FEFFFF;
 }
 
 /* SPLASH */
@@ -149,14 +149,14 @@ footer {
 
 /* Projects section */
 #projects {
-  background-color: #101357;
+  background-color: #fea49f;
   padding: 2%;
   /* height: 150vh; */
 }
 
 #projects h2 {
   text-align: center;
-  color: #FEFFFF;
+  color: #101357;
   margin-bottom: 1%;
   font-size: 4rem;
 }
@@ -170,7 +170,8 @@ footer {
 }
 
 .frame {
-  border: 1px solid #007f4f;
+  background-color: #101357;
+  border-radius: 10px;
   color: #FEFFFF;
   width: 350px;
   height: 450px;
