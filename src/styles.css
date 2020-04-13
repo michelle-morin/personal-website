@@ -9,23 +9,24 @@ body {
 
 /* NAV & FOOTER */
 nav {
-  background-color: #101357;
+  /* background-color: #d99058; */
+  background-color: rgb(226,166,118);
 }
 
 a.nav-link {
-  color: #FEFFFF !important;
+  color: rgb(30,44,46) !important;
   cursor: pointer;
   font-size: 1.5rem;
 }
 
 a.nav-link:hover {
-  color: #fea49f !important;
+  color: rgb(158,85,56) !important;
 }
 
 nav button {
-  border-color: #fea49f !important;
+  border-color: rgb(30,44,46) !important;
   font-family: 'Quicksand', sans-serif;
-  color: #fea49f !important;
+  color: rgb(30,44,46) !important;
   font-weight: bolder;
   font-size: 1.5rem !important;
 }
@@ -33,9 +34,8 @@ nav button {
 footer {
   text-align: center;
   padding: 1%;
-  border-top: 1px solid #101357;
-  background-color: #101357;
-  color: #FEFFFF;
+  background-color: rgb(224,170,118);
+  color: rgb(30,44,46);
 }
 
 /* SPLASH */
@@ -44,7 +44,7 @@ footer {
 }
 
 #splash {
-  background-color: #fea49f;
+  background-color: rgb(244,240,237);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ footer {
   position: relative;
   width: 100vw;
   height: 110vh;
-  background-image: url("assets/images/b.jpg");
+  /* background-image: url("assets/images/b.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,8 +80,8 @@ footer {
 }
 
 .introduction {
-  background-color: #007f4f;
-  color: #FEFFFF;
+  background-color: rgb(158,81,51);
+  color: rgb(244,240,237);
   height: 110vh;
   width: 100%;
   display: flex;
@@ -92,13 +92,9 @@ footer {
   text-align: center;
 }
 
-.bio p a {
-  color: #FEFFFF;
+.bio p a, .bio p a:hover {
+  color: rgb(244,240,237);
   text-decoration: underline;
-}
-
-.bio p a:hover {
-  color: #fea49f;
 }
 
 .accordion {
@@ -106,14 +102,14 @@ footer {
   width: 80%;
   padding: 5%;
   background-color: transparent;
-  color: #FEFFFF;
+  color: rgb(244,240,237);
 }
 
 .accordion .card {
   border-radius: 0;
-  background-color: #101357;
+  background-color: rgb(158,81,51);
   border-radius: 10px;
-  border: 1px solid #FEFFFF;
+  border: 1px solid rgb(244,240,237);
 }
 
 .accordion .card-header {
@@ -126,7 +122,7 @@ footer {
   outline: none;
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
-  color: #FEFFFF;
+  color: rgb(244,240,237);
   text-align: center;
   text-decoration: none;
 }
@@ -139,24 +135,24 @@ footer {
 .card-header:hover, .card-header:hover .btn-link {
   cursor: pointer;
   text-decoration: none;
-  background-color: #007f4f;
-  color: #FEFFFF;
+  background-color: rgb(244,240,237);
+  color: rgb(158,81,51);
 }
 
 .card-body {
-  background-color: #007f4f;
+  background-color: rgb(244,240,237);
+  color: rgb(158,81,51);
 }
 
 /* Projects section */
 #projects {
-  background-color: #fea49f;
+  background-color: rgb(208,205,188);
   padding: 2%;
-  /* height: 150vh; */
 }
 
 #projects h2 {
   text-align: center;
-  color: #101357;
+  color: rgb(30,44,46);
   margin-bottom: 1%;
   font-size: 4rem;
 }
@@ -170,9 +166,9 @@ footer {
 }
 
 .frame {
-  background-color: #101357;
+  border: 1px solid rgb(30,44,46);
   border-radius: 10px;
-  color: #FEFFFF;
+  color: rgb(158,81,51);
   width: 350px;
   height: 450px;
   margin-bottom: 2em;
@@ -184,7 +180,7 @@ footer {
 }
 
 .frame h4 {
-  color: #fea49f;
+  color: rgb(158,81,51);
 }
 
 .frame img {
@@ -205,7 +201,7 @@ img.camping, img.salon {
 }
 
 .frame a, .frame a:hover {
-  color: #fea49f;
+  color: rgb(30,44,46);
 }
 
 /* media queries for responsive design */
@@ -244,7 +240,7 @@ img.camping, img.salon {
   #about {
     height: auto;
     background-image: none;
-    background-color: #007f4f;
+    background-color: rgb(158,81,51);
   }
   .me {
     height: 50vh;
@@ -274,7 +270,7 @@ img.camping, img.salon {
 @media screen and (max-width: 500px) {
   #about {
     background-image: none;
-    background-color: #007f4f;
+    background-color: rgb(158,81,51);
   }
   #splash {
     height: 50vh;
@@ -302,7 +298,7 @@ img.camping, img.salon {
 @media screen and (max-width: 415px) {
   #about {
     background-image: none;
-    background-color: #007f4f;
+    background-color: rgb(158,81,51);
   }
   #splash {
     height: 50vh;
@@ -326,7 +322,7 @@ img.camping, img.salon {
 @media screen and (max-width: 375px) {
   #about {
     background-image: none;
-    background-color: #007f4f;
+    background-color: rgb(158,81,51);
   }
   #splash {
     height: 50vh;
