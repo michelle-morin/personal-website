@@ -4,12 +4,14 @@ body {
 
 /* NAV & FOOTER */
 nav {
-  background-color: rgb(226,166,118);
-  border-bottom: 2px solid rgb(244,240,237);
+  /* background-color: rgb(226,166,118); */
+  border-bottom: 2px solid rgb(226,166,118);
+  background-color: rgb(30,44,46);
 }
 
 a.nav-link {
-  color: rgb(30,44,46) !important;
+  /* color: rgb(30,44,46) !important; */
+  color: rgb(226,166,118) !important;
   cursor: pointer;
   font-size: 1.5rem;
 }
@@ -60,7 +62,7 @@ footer {
   position: relative;
   width: 100vw;
   height: 110vh;
-  background-image: url("assets/images/b.jpg");
+  background-image: url("assets/images/b2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,27 +71,30 @@ footer {
 
 .me {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .me img {
   border-radius: 10px;
   position: absolute;
-  height: 70vh;
-  top: 18vh;
+  height: 50vh;
+  top: 20vh;
 }
 
 .introduction {
   background-color: rgb(211, 173, 143);
   color: rgb(30,44,46);
-  height: 110vh;
+  /* height: 110vh; */
   width: 100%;
   display: flex;
   align-items: center;
 }
 
 .bio {
+  position: absolute;
+  top: 20vh;
   text-align: center;
+  margin: 2%;
 }
 
 .bio p a, .bio p a:hover {
@@ -121,7 +126,6 @@ footer {
   box-shadow: none;
   outline: none;
   background-color: transparent;
-  /* font-family: 'Quicksand', sans-serif; */
   color: rgb(30,44,46);
   text-align: center;
   text-decoration: none;
