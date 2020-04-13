@@ -1,16 +1,17 @@
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  /* font-family: 'Quicksand', sans-serif;
+  font-weight: 300; */
+  font-family: 'Lora', serif;
  }
  
- h1, h2, h3, h4, h5, h6 {
+ /* h1, h2, h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif;
-}
+} */
 
 /* NAV & FOOTER */
 nav {
-  /* background-color: #d99058; */
   background-color: rgb(226,166,118);
+  border-bottom: 2px solid rgb(244,240,237);
 }
 
 a.nav-link {
@@ -34,8 +35,9 @@ nav button {
 footer {
   text-align: center;
   padding: 1%;
-  background-color: rgb(224,170,118);
+  background-color: rgb(208,205,188);
   color: rgb(30,44,46);
+  border-top: 2px solid rgb(244,240,237);
 }
 
 /* SPLASH */
@@ -51,7 +53,7 @@ footer {
 }
 
 .name-box img {
-  width: 60vw;
+  width: 70vw;
   height: auto;
 }
 
@@ -80,8 +82,8 @@ footer {
 }
 
 .introduction {
-  background-color: rgb(158,81,51);
-  color: rgb(244,240,237);
+  background-color: rgb(211, 173, 143);
+  color: rgb(30,44,46);
   height: 110vh;
   width: 100%;
   display: flex;
@@ -93,7 +95,7 @@ footer {
 }
 
 .bio p a, .bio p a:hover {
-  color: rgb(244,240,237);
+  color: rgb(30,44,46);
   text-decoration: underline;
 }
 
@@ -102,14 +104,14 @@ footer {
   width: 80%;
   padding: 5%;
   background-color: transparent;
-  color: rgb(244,240,237);
+  color: rgb(30,44,46);
 }
 
 .accordion .card {
   border-radius: 0;
-  background-color: rgb(158,81,51);
+  background-color:  rgb(211, 173, 143);
   border-radius: 10px;
-  border: 1px solid rgb(244,240,237);
+  border: 1px solid rgb(30,44,46);
 }
 
 .accordion .card-header {
@@ -122,7 +124,7 @@ footer {
   outline: none;
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
-  color: rgb(244,240,237);
+  color: rgb(30,44,46);
   text-align: center;
   text-decoration: none;
 }
@@ -135,24 +137,25 @@ footer {
 .card-header:hover, .card-header:hover .btn-link {
   cursor: pointer;
   text-decoration: none;
-  background-color: rgb(244,240,237);
-  color: rgb(158,81,51);
+  background-color: rgb(30,44,46);
+  color: rgb(211, 173, 143);
+  transform: scale(1.2);
 }
 
 .card-body {
-  background-color: rgb(244,240,237);
-  color: rgb(158,81,51);
+  color: rgb(211, 173, 143);
+  background-color: rgb(30,44,46);
 }
 
 /* Projects section */
 #projects {
-  background-color: rgb(208,205,188);
+  background-color: rgb(158,81,51);
   padding: 2%;
 }
 
 #projects h2 {
   text-align: center;
-  color: rgb(30,44,46);
+  color: rgb(208,205,188);
   margin-bottom: 1%;
   font-size: 4rem;
 }
@@ -166,9 +169,9 @@ footer {
 }
 
 .frame {
-  border: 1px solid rgb(30,44,46);
+  border: 1px solid rgb(244,240,237);
   border-radius: 10px;
-  color: rgb(158,81,51);
+  color: rgb(208,205,188);
   width: 350px;
   height: 450px;
   margin-bottom: 2em;
@@ -180,7 +183,7 @@ footer {
 }
 
 .frame h4 {
-  color: rgb(158,81,51);
+  color: rgb(208,205,188);
 }
 
 .frame img {
@@ -201,6 +204,7 @@ img.camping, img.salon {
 }
 
 .frame a, .frame a:hover {
+  font-family: 'Quicksand', sans-serif;
   color: rgb(30,44,46);
 }
 
