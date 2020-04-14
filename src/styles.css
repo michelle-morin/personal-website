@@ -214,10 +214,26 @@ img.camping, img.salon {
   }
 }
 
+@media screen and (min-width: 766px) and (max-width: 1200px) {
+  .me img {
+    top: 2vh;
+    width: 100%;
+    height: auto;
+  }
+  .bio {
+    position: relative;
+    align-items: flex-start;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   #projects {
     height: auto;
     position: relative;
+  }
+  .me img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -229,15 +245,20 @@ img.camping, img.salon {
   .me {
     background-attachment: scroll;
   }
-}
-
-@media screen and (max-width: 935px) {
   .bio {
     position: relative;
     align-items: flex-start;
     top: 0vh;
   }
 }
+
+/* @media screen and (max-width: 935px) {
+  .bio {
+    position: relative;
+    align-items: flex-start;
+    top: 0vh;
+  }
+} */
 
 @media screen and (max-width: 1024px) and (max-height: 1366px) {
   #splash {
