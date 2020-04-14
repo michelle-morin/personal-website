@@ -246,8 +246,15 @@ img.camping, img.salon {
     padding-top: 0;
   }
   .card-header  {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .card-body {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .card-body p {
+    margin-bottom: 2px;
   }
   .bio {
     top: 1vh;
