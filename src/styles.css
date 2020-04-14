@@ -60,7 +60,7 @@ footer {
 #about {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background-image: url("assets/images/b1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@ footer {
   border-radius: 10px;
   position: absolute;
   height: 50vh;
-  top: 20vh;
+  top: 15vh;
 }
 
 .introduction {
@@ -89,7 +89,7 @@ footer {
 
 .bio {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   text-align: center;
   margin: 2%;
 }
