@@ -250,6 +250,11 @@ img.camping, img.salon {
   #splash {
     height: 50vh;
   }
+  .me img {
+    width: 100%;
+    height: auto;
+    top: 5vh;
+  }
   .bio {
     position: relative;
     align-items: center;
@@ -285,9 +290,9 @@ img.camping, img.salon {
     /* overflow: scroll; */
     align-items: flex-start;
   }
-  .project-cards {
+  /* .project-cards {
     justify-content: space-between;
-  }
+  } */
 }
 
 @media screen and (max-width: 500px) {
