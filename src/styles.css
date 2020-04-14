@@ -4,12 +4,14 @@ body {
 
 /* NAV & FOOTER */
 nav {
-  background-color: rgb(226,166,118);
-  border-bottom: 2px solid rgb(244,240,237);
+  /* background-color: rgb(226,166,118); */
+  border-bottom: 2px solid rgb(226,166,118);
+  background-color: rgb(30,44,46);
 }
 
 a.nav-link {
-  color: rgb(30,44,46) !important;
+  /* color: rgb(30,44,46) !important; */
+  color: rgb(226,166,118) !important;
   cursor: pointer;
   font-size: 1.5rem;
 }
@@ -19,9 +21,9 @@ a.nav-link:hover {
 }
 
 nav button {
-  border-color: rgb(30,44,46) !important;
+  border-color: rgb(226,166,118) !important;
   font-family: 'Quicksand', sans-serif;
-  color: rgb(30,44,46) !important;
+  color: rgb(226,166,118) !important;
   font-weight: bolder;
   font-size: 1.5rem !important;
 }
@@ -40,7 +42,10 @@ footer {
 }
 
 #splash {
-  background-color: rgb(244,240,237);
+  background-image: url("assets/images/t.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,8 +60,8 @@ footer {
 #about {
   position: relative;
   width: 100vw;
-  height: 110vh;
-  background-image: url("assets/images/b.jpg");
+  height: 100vh;
+  background-image: url("assets/images/b1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,21 +76,22 @@ footer {
 .me img {
   border-radius: 10px;
   position: absolute;
-  height: 70vh;
-  top: 18vh;
+  height: 50vh;
+  top: 20vh;
 }
 
 .introduction {
-  background-color: rgb(211, 173, 143);
   color: rgb(30,44,46);
-  height: 110vh;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
 .bio {
+  position: absolute;
+  top: 20vh;
   text-align: center;
+  margin: 2%;
 }
 
 .bio p a, .bio p a:hover {
@@ -117,7 +123,6 @@ footer {
   box-shadow: none;
   outline: none;
   background-color: transparent;
-  /* font-family: 'Quicksand', sans-serif; */
   color: rgb(30,44,46);
   text-align: center;
   text-decoration: none;
@@ -142,13 +147,13 @@ footer {
 
 /* Projects section */
 #projects {
-  background-color: rgb(158,81,51);
+  background-color: rgb(30,44,46);
   padding: 2%;
 }
 
 #projects h2 {
   text-align: center;
-  color: rgb(208,205,188);
+  color: rgb(211, 173, 143);
   margin-bottom: 1%;
   font-size: 4rem;
 }
@@ -162,9 +167,9 @@ footer {
 }
 
 .frame {
-  border: 1px solid rgb(244,240,237);
+  border: 1px solid rgb(211, 173, 143);
   border-radius: 10px;
-  color: rgb(208,205,188);
+  color: rgb(211, 173, 143);
   width: 350px;
   height: 450px;
   margin-bottom: 2em;
@@ -176,7 +181,7 @@ footer {
 }
 
 .frame h4 {
-  color: rgb(208,205,188);
+  color: rgb(211, 173, 143);
 }
 
 .frame img {
@@ -198,7 +203,7 @@ img.camping, img.salon {
 
 .frame a, .frame a:hover {
   font-family: 'Quicksand', sans-serif;
-  color: rgb(30,44,46);
+  color: rgb(208,205,188);
 }
 
 /* media queries for responsive design */
@@ -209,36 +214,76 @@ img.camping, img.salon {
   }
 }
 
+@media screen and (min-width: 766px) and (max-width: 1200px) {
+  .me img {
+    top: 2vh;
+    width: 100%;
+    height: auto;
+  }
+  .bio {
+    position: relative;
+    align-items: flex-start;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   #projects {
     height: auto;
     position: relative;
+  }
+  .me img {
+    width: 100%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 1200px) {
   #about {
     background-attachment: scroll;
-    height: 100vh;
+    height: auto;
   }
   .me {
     background-attachment: scroll;
   }
+  .bio {
+    position: relative;
+    align-items: flex-start;
+    top: 0vh;
+  }
 }
 
-@media screen and (max-width: 935px) {
-  .introduction {
-    height: 110vh;
-    overflow-y: scroll;
+/* @media screen and (max-width: 935px) {
+  .bio {
+    position: relative;
+    align-items: flex-start;
+    top: 0vh;
+  }
+} */
+
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  #splash {
+    height: 50vh;
+  }
+  .me img {
+    width: 100%;
+    height: auto;
+    top: 5vh;
+  }
+  .bio {
+    position: relative;
+    align-items: center;
+    top: 0vh;
+  }
+}
+
+@media screen and (max-width: 770px) and (max-height: 1024px) {
+  .me img {
+    width: 100%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 765px) {
-  #about {
-    height: auto;
-    background-image: none;
-    background-color: rgb(158,81,51);
-  }
   .me {
     height: 50vh;
     width: 100vw;
@@ -255,20 +300,11 @@ img.camping, img.salon {
     margin-top: 1%;
   }
   .introduction {
-    height: 120vh;
-    overflow: scroll;
     align-items: flex-start;
-  }
-  .project-cards {
-    justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 500px) {
-  #about {
-    background-image: none;
-    background-color: rgb(158,81,51);
-  }
   #splash {
     height: 50vh;
   }
@@ -277,8 +313,6 @@ img.camping, img.salon {
     width: 100vw;
   }
   .introduction {
-    height: 120vh;
-    overflow-y: scroll;
     align-items: flex-start;
   }
   .introduction p {
@@ -293,10 +327,6 @@ img.camping, img.salon {
 }
 
 @media screen and (max-width: 415px) {
-  #about {
-    background-image: none;
-    background-color: rgb(158,81,51);
-  }
   #splash {
     height: 50vh;
   }
@@ -305,7 +335,6 @@ img.camping, img.salon {
     width: 100vw;
   }
   .introduction {
-    height: 120vh;
     align-items: flex-start;
   }
   .introduction p {
@@ -317,10 +346,6 @@ img.camping, img.salon {
 }
 
 @media screen and (max-width: 375px) {
-  #about {
-    background-image: none;
-    background-color: rgb(158,81,51);
-  }
   #splash {
     height: 50vh;
     width: 100vw;
@@ -330,7 +355,6 @@ img.camping, img.salon {
   }
   .introduction {
     align-items: flex-start;
-    height: 135vh;
     width: 100vw;
   }
   .introduction p {
