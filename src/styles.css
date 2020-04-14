@@ -212,9 +212,9 @@ img.camping, img.salon {
 
 /* media queries for responsive design */
 
-@media screen and (max-width: 1875px) {
+@media screen and (min-width: 1600px) {
   #projects {
-    height: 75vh;
+    height: auto;
   }
 }
 
