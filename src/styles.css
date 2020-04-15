@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'ansonregular';
+  src: url('./assets/anson-font/anson-regular-webfont.eot');
+  src: url('./assets/anson-font/anson-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./assets/anson-font/anson-regular-webfont.woff') format('woff'),
+       url('./assets/anson-font/anson-regular-webfont.ttf') format('truetype'),
+       url('./assets/anson-font/anson-regular-webfont.svg#ansonregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Lora', serif;
  }
@@ -20,7 +31,7 @@ a.nav-link:hover {
 
 nav button {
   border-color: rgb(211, 173, 143) !important;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'ansonregular';
   color: rgb(211, 173, 143) !important;
   font-weight: bolder;
   font-size: 1.5rem !important;
@@ -204,7 +215,7 @@ img.camping, img.salon {
 }
 
 .frame a, .frame a:hover {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'ansonregular';
   color: rgb(208,205,188);
 }
 

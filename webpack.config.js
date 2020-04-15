@@ -34,6 +34,12 @@ module.exports = {
         ]
       },
       {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+        use: [
+        'file-loader'
+        ]
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader"
