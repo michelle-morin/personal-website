@@ -11,32 +11,35 @@
 
 body {
   font-family: 'Lora', serif;
- }
+  background-color: #f4f4f4;
+  color: #373737;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ansonregular';
+}
 
 /* NAV & FOOTER */
 nav {
-  /* border-bottom: 2px solid rgb(211, 173, 143); */
-  border-bottom: 2px solid rgb(223,223,219);
-  background-color: rgb(30,44,46);
+  border-bottom: 2px solid #dcd0c0;
+  background-color: #f4f4f4;
 }
 
 a.nav-link {
-  /* color: rgb(211, 173, 143) !important; */
-  color: rgb(223,223,219) !important;
+  font-family: 'ansonregular';
+  color: #373737 !important;
   cursor: pointer;
   font-size: 1.5rem;
 }
 
 a.nav-link:hover {
-  color: rgb(158,85,56) !important;
+  color: #c0b283 !important;
 }
 
 nav button {
-  /* border-color: rgb(211, 173, 143) !important; */
-  border-color: rgb(223,223,219) !important;
+  border-color: #373737 !important;
   font-family: 'ansonregular';
-  /* color: rgb(211, 173, 143) !important; */
-  color: rgb(223,223,219) !important;
+  color: #373737 !important;
   font-weight: bolder;
   font-size: 1.5rem !important;
 }
@@ -44,10 +47,9 @@ nav button {
 footer {
   text-align: center;
   padding: 1%;
-  color: rgb(30,44,46);
-  /* background-image: url('assets/images/b1.jpg');
-  background-size: cover; */
-  background-color: rgb(223,223,219);
+  color: #373737;
+  background-color: #f4f4f4;
+  border-top: 2px solid #dcd0c0;
 }
 
 /* SPLASH */
@@ -56,96 +58,97 @@ footer {
 }
 
 #splash {
-  background-image: url("assets/images/t.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.name-box img {
-  width: 70vw;
-  height: auto;
+#splash .name-box {
+  width: 80%;
+}
+
+#splash h1 {
+  font-size: 5rem;
+  background-color: #dcd0c0;
 }
 
 /* ABOUT */
 #about {
   position: relative;
   width: 100vw;
-  height: 110vh auto;
-  /* background-color: rgb(215,210,191); */
-  background-color: rgb(223,223,219);
-  /* background-image: url("assets/images/b1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
+  height: 100vh auto;
 }
 
-.me {
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  width: 48vw;
+  height: 48vh;
+}
+
+.top-right {
+  background-color: #c0b283;
+  text-align: center;
+}
+
+.top-left {
   display: flex;
   justify-content: center;
-}
-
-.me img {
-  border-radius: 10px;
-  position: absolute;
-  height: 50vh;
-  top: 15vh;
-}
-
-.introduction {
-  color: rgb(30,44,46);
-  width: 100%;
-  display: flex;
   align-items: center;
 }
 
-.bio {
-  position: absolute;
-  top: 10vh;
-  text-align: center;
-  margin: 2%;
+.top-left img {
+  border-radius: 10px;
+  height: 85%;
+  width: auto;
 }
 
-.bio h1 {
+.top-right h3 {
   font-size: 2rem;
-  color: rgb(158,85,56);
+  margin-top: 10%;
 }
 
-.bio p a, .bio p a:hover {
-  color: rgb(30,44,46);
+.top-right p a, .top-right p a:hover {
+  color: #373737;
   text-decoration: underline;
+}
+
+.bottom-left {
+  background-color: #dcd0c0;
 }
 
 .accordion {
   margin: auto auto;
+  margin-top: 10%;
   width: 80%;
   padding: 5%;
   background-color: transparent;
-  color: rgb(30,44,46);
+  color: #373737;
 }
 
 .accordion .card {
   border-radius: 0;
-  /* background-color:  rgb(211, 173, 143); */
-  background-color:  rgb(223,223,219);
+  background-color:  #f4f4f4;
   border-radius: 10px;
-  border: 1px solid rgb(30,44,46);
+  border: 1.5px solid #373737;
 }
 
 .accordion .card-header {
   cursor: pointer;
+  background-color: #f4f4f4;
 }
 
 .card-header button {
+  background-color: #f4f4f4;
   border: none;
   box-shadow: none;
   outline: none;
-  background-color: transparent;
-  color: rgb(30,44,46);
+  color: #373737;
   text-align: center;
   text-decoration: none;
 }
@@ -158,27 +161,25 @@ footer {
 .card-header:hover, .card-header:hover .btn-link {
   cursor: pointer;
   text-decoration: none;
-  background-color: rgb(30,44,46);
-  /* color: rgb(211, 173, 143); */
-  color: rgb(215,201,186);
+  background-color: #373737;
+  color: #f4f4f4;
 }
 
 .card-body {
-  /* color: rgb(211, 173, 143); */
-  color: rgb(215,201,186);
-  background-color: rgb(30,44,46);
+  color: #f4f4f4;
+  background-color: #373737;
 }
 
 /* PROJECTS */
 #projects {
-  background-color: rgb(30,44,46);
   padding: 2%;
+  height: auto;
+  position: relative;
 }
 
 #projects h2 {
   text-align: center;
-  /* color: rgb(211, 173, 143); */
-  color: rgb(215,201,186);
+  color: #373737;
   margin-bottom: 2%;
   font-size: 4rem;
 }
@@ -192,11 +193,8 @@ footer {
 }
 
 .frame {
-  /* border: 1px solid rgb(211, 173, 143); */
-  border: 1px solid rgb(215,201,186);
   border-radius: 10px;
-  /* color: rgb(211, 173, 143); */
-  color: rgb(215,201,186);
+  color: #373737;
   width: 350px;
   height: 450px;
   margin-bottom: 2em;
@@ -207,9 +205,20 @@ footer {
   flex-wrap: wrap;
 }
 
+.treasure-frame, .pokemon-frame {
+  background-color: #c0b283;
+}
+
+.park-frame, .salon-frame {
+  border: 1px solid #373737;
+}
+
+.bakery-frame, .camping-frame {
+  background-color: #dcd0c0;
+}
+
 .frame h4 {
-  /* color: rgb(211, 173, 143); */
-  color: rgb(215,201,186);
+  color: #373737;
 }
 
 .frame img {
@@ -231,28 +240,10 @@ img.camping, img.salon, img.parks, img.bakery {
 
 .frame a, .frame a:hover {
   font-family: 'ansonregular';
-  color: rgb(211, 173, 143);
+  color: #373737;
 }
 
 /* RESPONSIVENESS */
-
-@media screen and (min-width: 1600px) {
-  #projects {
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 766px) and (max-width: 1200px) {
-  .me img {
-    top: 2vh;
-    width: 100%;
-    height: auto;
-  }
-  .bio {
-    position: relative;
-    align-items: flex-start;
-  }
-}
 
 @media screen and (max-width: 1680px) {
   .card-header  {
@@ -268,41 +259,15 @@ img.camping, img.salon, img.parks, img.bakery {
   }
 }
 
-@media screen and (max-width: 1500px) {
-  #projects {
-    height: auto;
-    position: relative;
-  }
-  .me img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 @media screen and (min-width: 1201px) and (max-width: 1450px) {
   #skills-list {
     padding-top: 0;
-  }
-  .bio {
-    top: 1vh;
-  }
-  .me img {
-    top: 5vh;
   }
 }
 
 @media screen and (max-width: 1200px) {
   #about {
-    background-attachment: scroll;
     height: auto;
-  }
-  .me {
-    background-attachment: scroll;
-  }
-  .bio {
-    position: relative;
-    align-items: flex-start;
-    top: 0vh;
   }
 }
 
@@ -310,27 +275,10 @@ img.camping, img.salon, img.parks, img.bakery {
   #splash {
     height: 50vh;
   }
-  .me img {
-    width: 100%;
-    height: auto;
-    top: 5vh;
-  }
-  .bio {
-    position: relative;
-    align-items: center;
-    top: 0vh;
-  }
-}
-
-@media screen and (max-width: 770px) and (max-height: 1024px) {
-  .me img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media screen and (max-width: 765px) {
-  .me {
+  .top-left {
     height: 50vh;
     width: 100vw;
     background-image: url("assets/images/me.jpeg");
@@ -339,14 +287,39 @@ img.camping, img.salon, img.parks, img.bakery {
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
-  .me img {
+  .top-left img {
     display: none;
   }
-  .bio {
-    margin-top: 1%;
+  .top-right p {
+    font-size: 1rem;
   }
-  .introduction {
-    align-items: flex-start;
+  .bottom-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .top-right {
+    width: 100vw;
+  }
+  .bottom-right {
+    width: 100vw;
+    background-color: #dcd0c0;
+  }
+  .accordion .card {
+    background-color:  #dcd0c0;
+  }
+  .accordion .card-header {
+    background-color: #dcd0c0;
+  }
+  .card-header button {
+    background-color: #dcd0c0;
+  }
+  .card-header:hover, .card-header:hover .btn-link {
+    color: #dcd0c0;
+  }
+  .card-body {
+    color: #dcd0c0;
   }
 }
 
@@ -354,18 +327,9 @@ img.camping, img.salon, img.parks, img.bakery {
   #splash {
     height: 50vh;
   }
-  .me {
+  .top-left {
     height: 60vh;
     width: 100vw;
-  }
-  .introduction {
-    align-items: flex-start;
-  }
-  .introduction p {
-    font-size: 1rem;
-  }
-  .bio h2 {
-    margin-top: 1%;
   }
   #projects h2 {
     font-size: 2rem;
@@ -376,18 +340,9 @@ img.camping, img.salon, img.parks, img.bakery {
   #splash {
     height: 50vh;
   }
-  .me {
+  .top-left {
     height: 60vh;
     width: 100vw;
-  }
-  .introduction {
-    align-items: flex-start;
-  }
-  .introduction p {
-    font-size: 1rem;
-  }
-  .bio h2 {
-    margin-top: 1%;
   }
 }
 
@@ -396,20 +351,7 @@ img.camping, img.salon, img.parks, img.bakery {
     height: 50vh;
     width: 100vw;
   }
-  .me {
+  .top-left {
     height: 50vh;
-  }
-  .introduction {
-    align-items: flex-start;
-    width: 100vw;
-  }
-  .introduction p {
-    font-size: 1rem;
-  }
-  .bio {
-    height: 100%;
-  }
-  .bio h2 {
-    margin-top: 1%;
   }
 }
