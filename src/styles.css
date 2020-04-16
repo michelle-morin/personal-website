@@ -203,11 +203,6 @@ footer {
   border-radius: 5px;
 }
 
-.frame:hover {
-  transform: scale(1.05);
-  background-color: rgb(30,44,46);
-}
-
 .frame p {
   font-size: 1.1rem;
   padding-left: 1%;
