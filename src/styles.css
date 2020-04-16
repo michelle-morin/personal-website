@@ -167,7 +167,7 @@ footer {
 #projects h2 {
   text-align: center;
   color: rgb(211, 173, 143);
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   font-size: 4rem;
 }
 
@@ -203,13 +203,18 @@ footer {
   border-radius: 5px;
 }
 
+.frame:hover {
+  transform: scale(1.05);
+  background-color: rgb(30,44,46);
+}
+
 .frame p {
   font-size: 1.1rem;
   padding-left: 1%;
   padding-right: 1%;
 }
 
-img.camping, img.salon {
+img.camping, img.salon, img.parks {
   width: 90%;
   height: auto;
 }
