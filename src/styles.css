@@ -125,7 +125,7 @@ footer {
 
 .accordion {
   margin: auto auto;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 80%;
   padding: 5%;
   background-color: transparent;
@@ -136,7 +136,7 @@ footer {
   border-radius: 0;
   background-color:  #f4f4f4;
   border-radius: 10px;
-  border: 1.5px solid #373737;
+  border: 1px solid #373737;
 }
 
 .accordion .card-header {
