@@ -94,7 +94,11 @@ footer {
 .top-right {
   background-color: #c0b283;
   text-align: center;
-  padding: 2%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .top-left {
@@ -111,16 +115,22 @@ footer {
 
 .top-right h3 {
   font-size: 2rem;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 
-.top-right p a, .top-right p a:hover {
+.top-right p a, .top-right p a:hover, .bottom-left p a, .bottom-left p a:hover {
   color: #373737;
   text-decoration: underline;
 }
 
 .bottom-left {
   background-color: #dcd0c0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+  text-align: center;
 }
 
 .bottom-right {
@@ -310,7 +320,8 @@ img.camping, img.salon, img.parks, img.bakery {
     font-size: 1rem;
   }
   .bottom-left {
-    display: none;
+    /* display: none; */
+    height: auto;
   }
   .bottom-right {
     height: auto;
@@ -326,6 +337,11 @@ img.camping, img.salon, img.parks, img.bakery {
     width: 100vw;
     background-color: #dcd0c0;
     position: relative;
+  }
+  .bottom-left {
+    width: 100vw;
+    position: relative;
+    background-color: #c0b283;
   }
   .accordion .card {
     background-color:  #dcd0c0;
