@@ -9,14 +9,14 @@
   font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ansonregular';
+}
+
 body {
   font-family: 'Lora', serif;
   background-color: #f4f4f4;
   color: #373737;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'ansonregular';
 }
 
 /* NAV & FOOTER */
@@ -45,6 +45,7 @@ nav button {
 }
 
 footer {
+  font-family: 'ansonregular';
   text-align: center;
   padding: 1%;
   color: #373737;
