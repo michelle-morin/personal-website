@@ -225,15 +225,15 @@ footer {
   flex-wrap: wrap;
 }
 
-.treasure-frame, .pokemon-frame {
+.taproom-frame, .camping-frame {
   background-color: #c0b283;
 }
 
-.park-frame, .salon-frame {
+.treasure-frame, .bakery-frame {
   border: 1px solid #373737;
 }
 
-.bakery-frame, .camping-frame {
+.park-frame, .salon-frame {
   background-color: #dcd0c0;
 }
 
@@ -253,7 +253,7 @@ footer {
   padding-right: 5%;
 }
 
-img.camping, img.salon, img.parks, img.bakery {
+img.camping, img.salon, img.parks, img.bakery, img.taproom {
   width: 90%;
   height: auto;
 }
