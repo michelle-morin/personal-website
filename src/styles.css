@@ -83,12 +83,11 @@ footer {
 
 .about-section {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .about-box {
-  width: 48vw;
+  flex: 50%;
   height: 50vh;
 }
 
@@ -106,6 +105,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1%;
 }
 
 .top-left img {
@@ -327,26 +327,23 @@ img.camping, img.salon, img.parks, img.bakery, img.taproom, img.treasure {
     height: 65vh;
     margin-top: 4%;
   }
+  .about-section {
+    flex-direction: column;
+  }
+  .about-box {
+    flex: 100%;
+  }
   .top-left {
     height: 50vh;
-    width: 100vw;
-    background-image: url("assets/images/me.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    margin-bottom: 5%;
   }
   .top-right {
     height: auto;
-  }
-  .top-left img {
-    display: none;
   }
   .top-right p {
     font-size: 1rem;
   }
   .bottom-left {
-    /* display: none; */
     height: auto;
   }
   .bottom-right {
@@ -356,16 +353,13 @@ img.camping, img.salon, img.parks, img.bakery, img.taproom, img.treasure {
 
 @media screen and (max-width: 750px) {
   .top-right {
-    width: 100vw;
     position: relative;
   }
   .bottom-right {
-    width: 100vw;
     background-color: #dcd0c0;
     position: relative;
   }
   .bottom-left {
-    width: 100vw;
     position: relative;
     background-color: #c0b283;
   }
@@ -392,7 +386,6 @@ img.camping, img.salon, img.parks, img.bakery, img.taproom, img.treasure {
   }
   .top-left {
     height: 60vh;
-    width: 100vw;
   }
   #projects h2 {
     font-size: 2rem;
@@ -405,14 +398,12 @@ img.camping, img.salon, img.parks, img.bakery, img.taproom, img.treasure {
   }
   .top-left {
     height: 60vh;
-    width: 100vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   #splash {
     height: 65vh;
-    width: 100vw;
   }
   .top-left {
     height: 50vh;
