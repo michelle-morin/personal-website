@@ -276,9 +276,16 @@ img.camping, img.salon, img.parks, img.bakery, img.taproom, img.treasure {
   height: auto;
 }
 
-.frame a, .frame a:hover {
+.frame a {
   font-family: 'ansonregular';
   color: #373737;
+  display: inline-block;
+  transition: all .3 ease-in-out;
+}
+
+.frame a:hover {
+  text-decoration: none;
+  transform: scale(1.05);
 }
 
 /* RESPONSIVENESS */
