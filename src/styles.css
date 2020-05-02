@@ -116,7 +116,6 @@ footer {
 
 .top-right h3 {
   font-size: 2rem;
-  /* margin-top: 10%; */
 }
 
 .top-right p a, .top-right p a:hover, .bottom-left p a, .bottom-left p a:hover {
@@ -225,6 +224,25 @@ footer {
   flex-wrap: wrap;
 }
 
+.img-wrapper {
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: all .4s ease-in-out;
+}
+
+.img-wrapper img:hover {
+  transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -webkit-transform:scale(1.25);
+  -o-transform:scale(1.25);
+}
+
 .taproom-frame, .camping-frame {
   background-color: #c0b283;
 }
@@ -253,8 +271,8 @@ footer {
   padding-right: 5%;
 }
 
-img.camping, img.salon, img.parks, img.bakery, img.taproom {
-  width: 90%;
+img.camping, img.salon, img.parks, img.bakery, img.taproom, img.treasure {
+  width: 100%;
   height: auto;
 }
 
