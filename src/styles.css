@@ -154,6 +154,7 @@ footer {
   background-color:  #f4f4f4;
   border-radius: 10px;
   border: 1px solid #373737;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
 }
 
 .accordion .card-header {
@@ -214,6 +215,7 @@ footer {
 .frame {
   border-radius: 10px;
   color: #373737;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
   width: 350px;
   height: 450px;
   margin-bottom: 2em;
@@ -222,6 +224,11 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  transition: all .3s ease-in-out;
+}
+
+.frame:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .img-wrapper {
@@ -235,13 +242,21 @@ footer {
   transition: all .4s ease-in-out;
 }
 
-.img-wrapper img:hover {
+.frame:hover .img-wrapper img {
   transform:scale(1.25);
   -ms-transform:scale(1.25);
   -moz-transform:scale(1.25);
   -webkit-transform:scale(1.25);
   -o-transform:scale(1.25);
 }
+
+/* .img-wrapper img:hover {
+  transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -webkit-transform:scale(1.25);
+  -o-transform:scale(1.25);
+} */
 
 .taproom-frame, .camping-frame {
   background-color: #c0b283;
