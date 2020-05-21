@@ -259,7 +259,7 @@ footer {
   border: 1px solid #373737;
 }
 
-.hangman-frame, .bakery-frame {
+.trails-frame, .hangman-frame, .bakery-frame {
   background-color: #dcd0c0;
 }
 
